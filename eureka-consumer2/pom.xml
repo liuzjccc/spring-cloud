@@ -4,10 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.liuzj</groupId>
-    <artifactId>eurekaconsumer2</artifactId>
+    <artifactId>eureka-consumer2</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>eurekaconsumer2</name>
-    <description>this is a eurekaconsumer2</description>
+    <name>eureka-consumer2</name>
+    <description>this is a eureka-consumer2</description>
 
     <parent>
         <groupId>com.liuzj</groupId>

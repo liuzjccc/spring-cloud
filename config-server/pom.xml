@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.liuzj</groupId>
-    <artifactId>configserver</artifactId>
+    <artifactId>config-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>configserver</name>
-    <description>this is a configserver</description>
+    <name>config-server</name>
+    <description>this is a config-server</description>
 
     <parent>
         <groupId>com.liuzj</groupId>
