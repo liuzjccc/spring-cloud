@@ -1,6 +1,6 @@
 # SprinCloud
 ##### 此服务使用DiscoveryClient调用服务，RabbitMQ的简单实现
-###一.DiscoveryClient配置步骤
+### 一.DiscoveryClient配置步骤
 >* 引入相关的包
 ```
         <dependency>
@@ -23,7 +23,7 @@
             String hiService(@RequestParam String name);
         }
 ```
-###1.RabbitMQ的配置步骤
+### 二.RabbitMQ的配置步骤
 >* 引入spring-boot-starter-amqp包
 ```
         <dependency>

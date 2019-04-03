@@ -24,7 +24,7 @@
 >* discoveryConsumer: RabbitMQ简单使用
 >* eurekaconsumer & eurekaconsumer2: 配置客户端
 >* configserver: 配置服务端
-##### ![Image](./images/springbus-configserver.png)
+>* ![Image](./images/springbus-configserver.png)
 #### 4.Spring Cloud for Cloud Foundry
 #### 5.Spring Cloud Cluster
 #### 6.Spring Cloud Consul
