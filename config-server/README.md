@@ -40,5 +40,5 @@
         }
 ```
 >* 配置服务器和此服务启动后。如果GIT中的配置文件改动了，可以调用localhost:8767/actuator/bus-refresh通知连接到了配置中心的各个服务器去获取新的配置文件并刷新到缓存
-![Image text](https://github.com/liuzjccc/spring-cloud/tree/master/images/springbus-configserver.png)
+![Image text](../images/springbus-configserver.png)
 

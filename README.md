@@ -1,5 +1,5 @@
 # SprinCloud
-![Image text](https://github.com/liuzjccc/spring-cloud/tree/master/images/springcloud.jpg)
+![Image](./images/springcloud.jpg)
 #### 1.Spring Cloud Netflix
 >>此包下有Netflix Eureka（服务注册，服务发现）、Netflix Hystrix（仪表盘，熔断器）、Netflix Zuul（动态路由，拦截器）、Netflix Archaius（配置管理API）
 四个主要模块。目前项目实现了前三个实例。
@@ -23,7 +23,7 @@
 >* discoveryConsumer: RabbitMQ简单使用
 >* eurekaconsumer & eurekaconsumer2: 配置客户端
 >* configserver: 配置服务端
-![Image text](https://github.com/liuzjccc/spring-cloud/tree/master/images/springbus-configserver.png)
+##### ![Image](./images/springbus-configserver.png)
 #### 4.Spring Cloud for Cloud Foundry
 #### 5.Spring Cloud Cluster
 #### 6.Spring Cloud Consul
