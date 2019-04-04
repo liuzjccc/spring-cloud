@@ -1,6 +1,7 @@
 # SprinCloud
 ![Image](./images/springcloud.jpg)
 ### [相关优质项目](https://springcloud.cc/)
+### [参考](https://github.com/forezp/SpringCloudLearning)
 #### 基础概念: [核心组件](https://blog.csdn.net/forezp/article/details/83999882)
 >* Eureka：各个服务启动时，Eureka Client都会将服务注册到Eureka Server，并且Eureka Client还可以反过来从Eureka Server拉取注册表，从而知道其他服务在哪里
 >* Ribbon：服务间发起请求的时候，基于Ribbon做负载均衡，从一个服务的多台机器中选择一台
@@ -35,7 +36,7 @@
 >* zipkin-server：链路追踪服务
 >* discoveryConsumer & eurekaconsumer & eurekaconsumer2 & eureka-client以及gateway都配置了链路追踪
 >* 目前只有gateway服务能被链路检测到，其他的无法被检测到，问题原因还未找到
->* ![Image](../images/zipkin.png)
+>* ![Image](./images/zipkin.png)
 #### 5.Spring Cloud for Cloud Foundry
 #### 6.Spring Cloud Cluster
 #### 7.Spring Cloud Consul
