@@ -1,4 +1,4 @@
-package com.liuzj.eurekaserver.designMode;
+package com.liuzj.zipkinserver.designMode;
 
 /**
  * 建造者模式：将一些必要且繁琐的方法放到一个方法中，然后执行一个方法则将一些必要的方法全部执行

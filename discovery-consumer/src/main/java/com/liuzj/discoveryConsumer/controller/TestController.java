@@ -20,7 +20,7 @@ public class TestController {
     TestService testService;
 
     @RequestMapping(value = "/hi")
-    public String hi(@RequestParam String name) {
+    public String hi(@RequestParam(name = "name") String name) {
         return testService.hiService(name);
     }
 

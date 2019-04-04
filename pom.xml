@@ -24,6 +24,8 @@
         <module>discovery-consumer</module>
         <module>hystrix-dashboard</module>
         <module>zuul</module>
+        <module>gateway</module>
+        <module>zipkin-server</module>
     </modules>
 
     <properties>

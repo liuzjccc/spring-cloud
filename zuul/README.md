@@ -1,5 +1,5 @@
 # SprinCloud
-##### 此服务使用EurekaClient调用服务，并实现路由控制
+##### 此服务使用EurekaClient调用服务，并实现路由控制（Zuul只是Spring cloud整合Netflix的，gateway才是Spring cloud自己的网关）
 ### 一.动态路由实现步骤
 >* 引入包：spring-cloud-starter-zuul
 ```

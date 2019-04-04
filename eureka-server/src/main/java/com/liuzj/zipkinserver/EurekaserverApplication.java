@@ -1,4 +1,4 @@
-package com.liuzj.eurekaserver;
+package com.liuzj.zipkinserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

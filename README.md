@@ -1,6 +1,12 @@
 # SprinCloud
 ![Image](./images/springcloud.jpg)
 ### [相关优质项目](https://springcloud.cc/)
+#### 基础概念: [核心组件](https://blog.csdn.net/forezp/article/details/83999882)
+>* Eureka：各个服务启动时，Eureka Client都会将服务注册到Eureka Server，并且Eureka Client还可以反过来从Eureka Server拉取注册表，从而知道其他服务在哪里
+>* Ribbon：服务间发起请求的时候，基于Ribbon做负载均衡，从一个服务的多台机器中选择一台
+>* Feign：基于Feign的动态代理机制，根据注解和选择的机器，拼接请求URL地址，发起请求  
+>* Hystrix：发起请求是通过Hystrix的线程池来走的，不同的服务走不同的线程池，实现了不同服务调用的隔离，避免了服务雪崩的问题
+>* Zuul：如果前端、移动端要调用后端系统，统一从Zuul网关进入，由Zuul网关转发请求给对应的服务
 #### 1.Spring Cloud Netflix
 >>此包下有Netflix Eureka（服务注册，服务发现）、Netflix Hystrix（仪表盘，熔断器）、Netflix Zuul（动态路由，拦截器）、Netflix Archaius（配置管理API）
 四个主要模块。目前项目实现了前三个实例。
@@ -25,6 +31,11 @@
 >* eurekaconsumer & eurekaconsumer2: 配置客户端
 >* configserver: 配置服务端
 >* ![Image](./images/springbus-configserver.png)
-#### 4.Spring Cloud for Cloud Foundry
-#### 5.Spring Cloud Cluster
-#### 6.Spring Cloud Consul
+#### 4.Spring Cloud Sleuth
+>* zipkin-server：链路追踪服务
+>* discoveryConsumer & eurekaconsumer & eurekaconsumer2 & eureka-client以及gateway都配置了链路追踪
+>* 目前只有gateway服务能被链路检测到，其他的无法被检测到，问题原因还未找到
+>* ![Image](../images/zipkin.png)
+#### 5.Spring Cloud for Cloud Foundry
+#### 6.Spring Cloud Cluster
+#### 7.Spring Cloud Consul

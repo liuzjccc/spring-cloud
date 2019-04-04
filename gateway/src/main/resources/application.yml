@@ -1,0 +1,38 @@
+# 端口
+server:
+  port: 8769
+
+# eureka 注册中心配置
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+# 路由配置
+spring:
+  application:
+    name: gateway
+  zipkin:
+    enabled: true
+    locator:
+      discovery:
+        enabled: true
+    base-url: http://localhost:8799
+  cloud:
+    gateway:
+      routes:
+      - id: service-ribbon
+        uri: http://localhost:8765
+        predicates:
+        - Path=/api-a/**
+        filters:
+        - StripPrefix=1
+      - id: service-feign
+        uri: lb://service-feign
+        predicates:
+        - Path=/api-b/**
+        filters:
+        - StripPrefix=1
+  sleuth:
+    sampler:
+      probability: 1.0

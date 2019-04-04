@@ -1,4 +1,4 @@
-package com.liuzj.eurekaserver.designMode;
+package com.liuzj.zipkinserver.designMode;
 
 /**
  * 抽象工厂模式（简单工厂模式 -> 工厂方法模式 -> 静态工厂模式 -> 抽象工厂模式），场景：凡是出现了大量的产品需要创建，并且具有共同的接口时

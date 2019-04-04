@@ -1,4 +1,4 @@
-package com.liuzj.eurekaserver.designMode;
+package com.liuzj.zipkinserver.designMode;
 
 /**
  * 装饰模式其实就是对类的层层增强(典型应用就是IO流)

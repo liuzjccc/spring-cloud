@@ -1,4 +1,4 @@
-package com.liuzj.eurekaserver.designMode;
+package com.liuzj.zipkinserver.designMode;
 
 /**
  * 责任链模式

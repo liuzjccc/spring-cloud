@@ -1,4 +1,4 @@
-package com.liuzj.eurekaserver.designMode;
+package com.liuzj.zipkinserver.designMode;
 
 /**
  * 桥接模式：将抽象和实现分离，即抽象的方法改动不会影响到实现

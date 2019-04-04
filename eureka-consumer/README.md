@@ -1,6 +1,6 @@
 # SprinCloud
-##### 此服务实现断路器，读取仓库配置（配置client）
-### 一.断路器-仪表盘实现步骤
+### 此服务实现断路器，读取仓库配置（配置client）
+#### 一.断路器-仪表盘实现步骤
 >* 引入spring-cloud-starter-netflix-eureka-client（服务发现基础包）、com.netflix.hystrix和spring-boot-starter-actuator（断路器和被仪盘监控需要的包）
 ```
         <dependency>
@@ -35,7 +35,7 @@
 ```
 >* 启动之后在浏览器中输入localhost:8763/hystrix.stream看是否可被监控，否则无法在仪盘看到输出
 
-### 二.配置读取以及Spring cloud bus实现步骤
+#### 二.配置读取以及Spring cloud bus实现步骤
 >* 引入spring-cloud-starter-config(配置读取基础包)、spring-cloud-starter-bus-amqp（实现spring cloud bus）
 ```
         <dependency>
@@ -62,3 +62,20 @@
         eureka.client.serviceUrl.defaultZone= http://localhost:8761/eureka/
 ```
 >* 配置服务器和此服务启动后，此服务可以通过@value方式读取远程GIT中的配置文件。如果GIT中的配置文件改动了，可以调用localhost:8767/actuator/bus-refresh通知连接到了配置中心的各个服务器去获取新的配置文件并刷新到缓存
+#### 三.配置链路追踪
+>* 添加相关依赖
+```
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-zipkin</artifactId>
+            <version>2.0.0.RELEASE</version>
+        </dependency>
+```
+>* 添加配置
+```
+        #zipkin链路分析
+        spring.zipkin.locator.discovery.enabled= true
+        spring.zipkin.base-url= http://localhost:8799
+        spring.zipkin.discovery-client-enabled=true
+        spring.sleuth.sampler.probability=1.0
+```

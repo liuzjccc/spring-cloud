@@ -9,6 +9,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface TestService {
 
     @RequestMapping(value = "hi", method = RequestMethod.GET)
-    String hiService(@RequestParam String name);
+    String hiService(@RequestParam(name = "name") String name);
 
 }

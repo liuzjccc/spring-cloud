@@ -1,6 +1,6 @@
 # SprinCloud
-##### 此服务使用DiscoveryClient调用服务，RabbitMQ的简单实现
-### 一.DiscoveryClient配置步骤
+### 此服务使用DiscoveryClient调用服务，RabbitMQ的简单实现
+#### 一.DiscoveryClient配置步骤
 >* 引入相关的包
 ```
         <dependency>
@@ -23,7 +23,7 @@
             String hiService(@RequestParam String name);
         }
 ```
-### 二.RabbitMQ的配置步骤
+#### 二.RabbitMQ的配置步骤
 >* 引入spring-boot-starter-amqp包
 ```
         <dependency>
@@ -72,3 +72,20 @@
         }
 ```
 >* 测试
+#### 三.配置链路追踪
+>* 添加相关依赖
+```
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-zipkin</artifactId>
+            <version>2.0.0.RELEASE</version>
+        </dependency>
+```
+>* 添加配置
+```
+        #zipkin链路分析
+        spring.zipkin.locator.discovery.enabled= true
+        spring.zipkin.base-url= http://localhost:8799
+        spring.zipkin.discovery-client-enabled=true
+        spring.sleuth.sampler.probability=1.0
+```
