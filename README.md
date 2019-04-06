@@ -35,7 +35,7 @@
 #### 4.Spring Cloud Sleuth
 >* zipkin-server：链路追踪服务
 >* discoveryConsumer & eurekaconsumer & eurekaconsumer2 & eureka-client以及gateway都配置了链路追踪
->* 目前只有gateway服务能被链路检测到，其他的无法被检测到，问题原因还未找到
+>* 目前只有gateway服务能被链路检测到，其他的无法被检测到，问题原因还未找到（问题原因是最新版本需要在配置文件中配置：spring.zipkin.sender.type=web）
 >* ![Image](./images/zipkin.png)
 #### 5.Spring Cloud for Cloud Foundry
 #### 6.Spring Cloud Cluster

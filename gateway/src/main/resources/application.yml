@@ -22,7 +22,7 @@ spring:
     gateway:
       routes:
       - id: service-ribbon
-        uri: http://localhost:8765
+        uri: lb://service-feign
         predicates:
         - Path=/api-a/**
         filters:
