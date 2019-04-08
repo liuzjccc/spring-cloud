@@ -77,5 +77,6 @@
         spring.zipkin.locator.discovery.enabled= true
         spring.zipkin.base-url= http://localhost:8799
         spring.zipkin.discovery-client-enabled=true
+        spring.zipkin.sender.type=web
         spring.sleuth.sampler.probability=1.0
 ```
